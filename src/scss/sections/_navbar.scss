@@ -1,0 +1,22 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+.menu {
+  @include gradient;
+
+  li {
+    padding: 0 0.7rem;
+    a {
+      color: $white !important;
+      text-transform: capitalize;
+      font-weight: 600;
+
+      &:hover{
+        color:$gray-500 !important;
+      }
+    }
+  }
+}
+
+.border-bottom-g{
+  border-bottom:2px solid $secondary;
+}
