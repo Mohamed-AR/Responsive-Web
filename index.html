@@ -13,7 +13,8 @@
       />
       <link rel="icon" type="image/png" href="logo.png"/>
 <link rel="icon" type="image/png" href="https://example.com/favicon.png"/>
-    <link rel="stylesheet" href="assets/glightbox-master/dist/css/glightbox.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Mohamed Ali</title>
   </head>
@@ -100,7 +101,7 @@
                 alt="video illutration"
                 class="rounded-circle img-fluid"
               />
-              <a href="#" onclick="test()" class="glightbox">
+              <a href="#" class="glightbox">
                 <span>
                   <i class="fas fa-play-circle"></i>
                 </span>
@@ -873,7 +874,17 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="/assets/glightbox-master/dist/js/glightbox.min.js"></script>
-    <script src="assets/scripts/script.js"></script>
+    
+    <script type="text/javascript">
+      //ACTIVE IMAGE LIGHTBOX
+      const slides = document.getElementsByClassName("glightbox");
+        slides = GLightbox({
+          href: "https://www.youtube.com/watch?v=nMR9Kyk6cs4",
+  type: "video",
+  source: "youtube",
+  width: 900,
+  autoPlayVideos: "true",
+        });
+      </script>
   </body>
 </html>
